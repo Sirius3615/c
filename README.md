@@ -374,6 +374,42 @@ main()
 }
 ```
 
+18. Napiši program koji će unositi 10 članmi niz brojeva, te ga ispisuje sortiranog od manjeg prema većem.
+
+```c
+#include <stdio.h>
+main()
+{
+	int i, j, a[10], p;
+	/* unos elemenata niza */
+	for (i=0;i<10;i=i+1)
+	{
+		printf("a[%d]=",i);
+		scanf("%d",&a[i]);
+	}
+	/* ispis elemenata niza */
+	
+	for (i=0; i<10; i++) {
+		for(j=i+1; j<10; j++) {
+			if(a[j] < a[i]) {
+				// zamjena a[i] i a[j]
+				p = a[i];
+				a[i] = a[j];
+				a[j] = p;
+			} 
+		}
+	}
+	
+	printf("\nElementi niza su: \n");
+	for(i=0;i<10;i=i+1)
+	{
+		printf("%d ",a[i]);
+	}
+	return 0;
+}
+```
+
+
 ---
 Napravili: 
 - Josip Kostović
