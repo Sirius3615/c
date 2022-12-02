@@ -21,7 +21,7 @@ main() {
 }
 ```
 
-2. Napiši program koji će za uneseni prirodni broj n izračunati sumu. S= 1+2^2...
+2. Napiši program koji će za uneseni prirodni broj `n` izračunati sumu. `S= 1+2^2...`
 
 ```c
 #include <stdio.h>
@@ -43,7 +43,7 @@ main() {
 }
 ```
 
-3. Napiši program koji će za uneseni prirodni broj n izračunavati zbroj faktorijela. S= 1!+2!+3!...
+3. Napiši program koji će za uneseni prirodni broj `n` izračunavati zbroj faktorijela. `S= 1!+2!+3!...`
 
 ```c
 #include <stdio.h>
@@ -61,7 +61,7 @@ main() {
 	printf("rezultat: %d ", s);
 }
 ```
-4. Napiši program koji če za uneseni cijeli broj x i broj n računati sumu. S=1+x+x^2/2!...
+4. Napiši program koji če za uneseni cijeli broj `x` i broj `n` računati sumu. `S=1+x+x^2/2!...`
 
 ```c
 #include <stdio.h>
@@ -84,7 +84,7 @@ main() {
 }
 ```
 
-5. Napiši program koji će unositi prirodni broj n te računati sumu. S= 1+ 1+2/2!...
+5. Napiši program koji će unositi prirodni broj `n` te računati sumu. `S= 1+ 1+2/2!...`
 
 ```c
 #include <stdio.h>
@@ -147,7 +147,7 @@ main() {
 }
 ```
 
-8. Napiši koji će učitavati prirodan broj n, te ispisati je li prost.
+8. Napiši koji će učitavati prirodan broj `n`, te ispisati je li prost.
 
 ```c
 #include <stdio.h>
@@ -167,7 +167,7 @@ main(){
 	A: return 0;
 }
 ```
-9. Napiši program koji unosi prirodni broj n te ispisuje prvi sljedeći nakon njega koji je prost.
+9. Napiši program koji unosi prirodni broj `n` te ispisuje prvi sljedeći nakon njega koji je prost.
 
 ```c
 #include <stdio.h>
@@ -191,7 +191,7 @@ main(){
 	printf("Prvi sljedeci prosti broj je: %d",n);
 }
 ```
-10. Napiši program koji unosi brojeve sve dok se ne unese -1. Program treba upisati koliko je brojeva među njima djeljivo s 5.
+10. Napiši program koji unosi brojeve sve dok se ne unese `-1`. Program treba upisati koliko je brojeva među njima djeljivo s `5`.
 
 ```c
 #include <stdio.h>
@@ -211,7 +211,7 @@ main(){
 	printf("%d unesenih brojeva je djeljivo s 5", djeljiv);
 }
 ```
-11. Napiši program koji će unositi brojeve sve dok se ne unese broj koji je djeljiv s 3. Program treba ispisati koliko je uneseno brojeva i njihov zbroj.
+11. Napiši program koji će unositi brojeve sve dok se ne unese broj koji je djeljiv s `3`. Program treba ispisati koliko je uneseno brojeva i njihov zbroj.
 
 ```c
 #include <stdio.h>
@@ -252,7 +252,7 @@ main() {
 }
 ```
 
-13. Napiši program koji unosi cijele brojeve sve dok se ne unese 0, te ispisuje koliko ih ima točno jednu parnu znamenku.
+13. Napiši program koji unosi cijele brojeve sve dok se ne unese `0`, te ispisuje koliko ih ima točno jednu parnu znamenku.
 
 ```c
 #include <stdio.h>
@@ -277,7 +277,7 @@ main(){
 	
 }
 ```
-14. Niz primjer: Napiši program koji će unositi 10 člani niz brojeva te isti ispisuje.
+14. Niz primjer: Napiši program koji će unositi `10` člani niz brojeva te isti ispisuje.
 
 ```c
 #include <stdio.h>
