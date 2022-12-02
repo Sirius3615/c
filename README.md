@@ -409,6 +409,35 @@ main()
 }
 ```
 
+19. Napiši program koji unosi cijeli dekatski broj (do 10 znamenki) te ga pretvara u binarni.
+
+```c
+#include <stdio.h>
+main()
+{
+	int i=0, j, n, p, a[100];
+		
+	printf("unesi broj do 10 znamenki");
+	scanf("%d",&n);
+
+	// pretvorba u binarni
+	while(n>0) {
+		a[i]=n%2;    
+		n=n/2;
+		i++;
+	}
+		
+	/* ispis elemenata niza */
+	printf("\nBinarni broj je: \n");
+	for(j=i-1;j>=0;j--)
+	{
+		printf("%d",a[j]);
+	}
+	
+	return 0;
+}
+```
+
 
 ---
 Napravili: 
