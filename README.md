@@ -437,9 +437,101 @@ main()
 	return 0;
 }
 ```
+20. LOTO 7/39
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+main() {
+	int x, i, a[7], j, p;
+	
+	printf("LOTO 7/39 \n\n");
+	srand(time(NULL));
+	for(i=0; i<7; i++) {
+	A:	x = rand() % 39 + 1;
+		for (j=0; j<i-1; j++) {
+			if(x == a[j]) goto A;			
+		}
+		a[i] = x;
+		printf("%d. izvuceni broj je: %d \n",i+1,a[i]);
+	}
+	
+	// sortiranje i ispis
+	for (i=0; i<6; i++) {
+		for(j=i+1; j<7; j++) {
+			if(a[j] < a[i]) {
+				p = a[i];
+				a[i] = a[j];
+				a[j] = p;
+			} 
+		}
+	}
+
+	//ispis
+	printf("\nDobitna kombinacija je: \n");
+	for(i=0;i<7;i++)
+	{
+		printf("%d ",a[i]);
+	}
+	return 0;
+}
+```
+
+21. Duljina riječi (char)
+```c
+#include <stdio.h>
+
+main() {
+	char a[20];
+	int i=0;
+	
+	printf("Unesi rijec: ");
+	gets(a);
+
+	while(a[i+1] != '\0') {
+		i++;	
+	}
+	printf("duljina rijeci je %d", i);
+}
+```
+
+22. Duljina riječi sa `strlen()` 
+```c
+#include <stdio.h>
+#include <string.h>
+
+main() {
+	char a[20];
+	int i=0;
+	
+	printf("Unesi rijec: ");
+	gets(a);
+
+	i = strlen(a);
+	
+	printf("duljina rijeci je: %d", i);
+}
+```
+
+23. Obrnuta riječ
+```c
+#include <stdio.h>
+#include <string.h>
+
+main() {
+	char a[20];
+	int i=0, j;
+	
+	printf("Unesi rijec: ");
+	gets(a);
+	i = strlen(a);
+	
+	for (j=i-1; j>=0; j--) {
+		printf("%c", a[j]);
+	}	
+}
+```
 
 ---
-Napravili: 
-- Josip Kostović
-- Ivan Begonja 
+
